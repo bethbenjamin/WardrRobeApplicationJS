@@ -1,0 +1,95 @@
+﻿{
+    box-sizing: border-box;
+}
+
+.zoom {
+    padding: 0px;
+    background-color: transparent;
+    transition: transform .2s;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+    .zoom:hover {
+        -ms-transform: scale(1.8); /* IE 9 */
+        -webkit-transform: scale(1.8); /* Safari 3-8 */
+        transform: scale(1.8);
+    }
+
+
+
+
+
+
+.btn-primary {
+    color: black;
+    text-shadow: 2px 2px 2px gray;
+    
+    box-shadow: 0 0 1px 1px white;
+    background-color: #cedef3;
+    border-color: #cedef3;
+}
+
+.jumbotron {
+    background-size: cover;
+    background-image: url('images/movingcoat.gif');
+    color: white;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    height: 400px;
+    /*position: absolute;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 270px;*/
+}
+
+.navbar-inverse {
+    background-color: #cedef3;
+    border-bottom: none;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: black;
+    }
+   
+
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:blue;
+}
+
+
+    a:hover {
+    color: black;
+}
+   
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}

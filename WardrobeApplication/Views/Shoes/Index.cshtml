@@ -1,0 +1,64 @@
+﻿@model IEnumerable<WardrobeApplication.Models.Shoe>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Add Shoes </h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@foreach (var item in Model)
+{
+
+    <div class=" col-sm-4 col-md-4">
+        <div class="thumbnail">
+            <div class="caption" align="center">
+                <p>
+
+                    @Html.DisplayFor(modelItem => item.Name)<br />
+
+                    <img src="@Html.DisplayFor(modelItem => item.Photo)" height="200px" width="200px" /><br />
+
+
+                    @Html.DisplayNameFor(model => model.Color):@Html.DisplayFor(modelItem => item.Color)<br />
+
+                    @Html.DisplayNameFor(model => model.Season):@Html.DisplayFor(modelItem => item.Season)<br />
+
+                    @Html.DisplayNameFor(model => model.Occasion):@Html.DisplayFor(modelItem => item.Occasion)<br />
+
+                    @Html.DisplayNameFor(model => model.Type):@Html.DisplayFor(modelItem => item.Type)<br />
+
+
+
+
+
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ShoeID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ShoeID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ShoeID })
+
+                </p>
+            </div>
+        </div>
+    </div>
+}
+<table class="table"></table>
+
+
+
+
+
+
+
+
+
+
+<table class="table">
+    <tr>
+        
+            </td>
+        </tr>
+    }
+
+</table>

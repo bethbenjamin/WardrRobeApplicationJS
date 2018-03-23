@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WardrobeApplication.Models.Bottom>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Add Bottoms</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var item in Model)
+{
+
+    <div class=" col-sm-4 col-md-4">
+        <div class="thumbnail">
+            <div class="caption" align="center">
+
+                <p>
+
+                    <b>  @Html.DisplayFor(modelItem => item.Name)</b><br />
+
+                    <img src="@Html.DisplayFor(modelItem => item.Photo)" height="260px" width="200px" /><br />
+
+
+                    @Html.DisplayNameFor(model => model.Color):   @Html.DisplayFor(modelItem => item.Color)<br />
+
+                    @Html.DisplayNameFor(model => model.Season):@Html.DisplayFor(modelItem => item.Season)<br />
+
+                    @Html.DisplayNameFor(model => model.Occasion):@Html.DisplayFor(modelItem => item.Occasion)<br />
+
+                    @Html.DisplayNameFor(model => model.Type): @Html.DisplayFor(modelItem => item.Type)<br />
+
+
+
+                    @Html.ActionLink("Edit", "Edit", new { id = item.BottomID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.BottomID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })
+
+                </p>
+            </div>
+        </div>
+    </div>
+}
+<table class="table"></table>
+
+
+
+

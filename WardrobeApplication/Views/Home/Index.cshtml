@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<body onload="Greeting()">
+    <div class="jumbotron" id="jumbomain">
+
+        <br /><br />
+        <h1 id="home" onmouseover="mouseOver()" onmouseout="mouseOut()">Men's Wardrobe</h1>
+        <p class="lead">Add clothes from your own closet and build new outfits. </p>
+
+        <p><a href="~/Tops/Index" class="btn btn-primary btn-lg"> Start Your Wardrobe Here</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h2>Tops</h2>
+            <p>
+                The easiest way to build your wardrobe in this app is from the top -> down. Start by adding tops.  Give them a descriptive name, so that you can tell which top you're looking for.
+            </p><br /><br />
+            <p><a class="btn btn-default" href="~/Tops/Index">Add Tops &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <h2>Bottoms</h2>
+            <p>Getting started with bottoms is easy. Start here when adding your bottoms.  All bottoms aren't created equally.  You will get the most from the app when you use descriptive words like 'cargo', 'maxi', or 'tuxedo'. </p>
+            <p>
+                <br />
+                <a class="btn btn-default" href="~/Bottoms/Index">Add Bottoms &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Shoes</h2>
+            <p>Shoes are a staple of a completed outfit. Remember to coordinate your occasion with your style of shoe. Give them a descriptive name, so that you can tell which shoe you're looking for.</p>
+            <p>
+                <br /><br />
+
+                <a class="btn btn-default" href="~/Shoes/Index">Add Shoes &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Accessories</h2>
+            <p>No outfit is complete without the right accessory. Give them a descriptive name, so that you can tell which accessory you're looking for. Don't forget to add details.</p>
+            <p>
+                <br /><br />
+
+
+
+                <a class="btn btn-default" href="~/Accessories/Index">Accessorize &raquo;</a>
+            </p>
+        </div>
+    </div>
+</body>

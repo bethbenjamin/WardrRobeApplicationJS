@@ -1,0 +1,37 @@
+﻿@model WardrobeApplication.Models.Bottom
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>View The Bottoms in Detail</h2>
+
+<div>
+    <h4>Bottom</h4>
+    <hr />
+    <b>  @Html.DisplayFor(model => model.Name)</b><br />
+
+
+
+    <img src="@Html.DisplayFor(model => model.Photo)" height="360px" width=" 300px" /><br />
+
+    @Html.DisplayNameFor(model => model.Color):
+
+    @Html.DisplayFor(model => model.Color)<br />
+
+    @Html.DisplayNameFor(model => model.Season):
+
+    @Html.DisplayFor(model => model.Season)<br />
+
+    @Html.DisplayNameFor(model => model.Occasion):
+
+    @Html.DisplayFor(model => model.Occasion)<br />
+
+    @Html.DisplayNameFor(model => model.Type):
+
+    @Html.DisplayFor(model => model.Type)<br />
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
