@@ -1,4 +1,17 @@
-﻿{
+﻿span {
+    line-height: 20px;
+    font-size: 30px;
+    display: block;
+    height: 20px;
+    
+}
+
+    span:hover {
+        font-size: 20px;
+        color: gray;
+    }
+
+{
     box-sizing: border-box;
 }
 

@@ -256,6 +256,7 @@
     <Content Include="Models\WardrobeModel.edmx.diagram">
       <DependentUpon>WardrobeModel.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\horse.ogg" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

@@ -34,9 +34,56 @@ function mouseOut() {
 
 // redirecting function
 function Redirect() {
-    window.open("https://www.tbdress.com/Cheap-Mens-Outerwears-105416/")
+    var txt;
+    var r = confirm("You are now being redirected to a shopping site.")
+    if (r == true) {
+        window.open("https://www.tbdress.com/Cheap-Mens-Outerwears-105416/");
+    } else {
+        txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+    
+    
 }
-//function Redirect() {
-//    window.location = "http://www.tbdress.com", '_blank';
+//changes text in footer
+function changeText(text) {
+    var display = document.getElementById('text-display');
+    display.innerHTML = "";
+    display.innerHTML = text;
+}
+function changeback(text) {
+    var display = document.getElementById('text-display');
+    display.innerHTML = "";
+    display.innerHTML = text;
+}
 
+
+function changetext() {
+    var textchange2 = "Created by Elizabeth Roadman-Benjamin";
+    var id = document.getElementById("DP");
+    id.innerHTML = textchange2;
+}
+
+
+//oncanplay code
+function myFunction() {
+    alert("Please start playing audio");
+}
+document.getElementById("myVideo").addEventListener("canplay", myFunction);
+//oncanplay end
+
+//onend code starts
+function myFunctionEnd1() {
+    alert("The audio has ended, please move along.");
+}
+//onend ends
+
+
+//var myArray = [];
+
+//@foreach(var d in Model.data)
+//{
+//    @: myArray.push("@d");
 //}
+
+//alert(myArray);

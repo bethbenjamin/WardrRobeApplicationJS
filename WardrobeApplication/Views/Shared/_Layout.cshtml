@@ -35,17 +35,33 @@
         </div>
     </div>
     <div class="container body-content">
-      
+
         @RenderBody()
         <hr />
         <footer>
+
+            <!--redirect button-->
             <form>
                 <input type="button" value="Shop Now" onclick="Redirect();" />
             </form>
-            <p>&copy; @DateTime.Now.Year -Wardrobe Application</p>
+
+           
+
+            <!--changes the text on mouseover-->
+            <div id="box" onmouseover="changeText('Created By Elizabeth Roadman-Benjamin')" onmouseout="changeback('&copy; 2018 -Wardrobe Application ')">
+
+                <div id="text-display">
+                    &copy; @DateTime.Now.Year -Wardrobe Application
+                </div>
+
+
+
+
+
+            </div>
         </footer>
     </div>
-   
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
